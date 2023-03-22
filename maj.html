@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap linking CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<!--Linking CSS file-->
+    <link rel="stylesheet" href="maj.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class ="App">
+        <h3 class="title">the weather</h3>  
+        <div class ="con">
+          <!--current info of location/city entered-->
+        <div >
+        <h1 class="temp">16&#176</h1>
+        <div class="ct">
+            <h1 class="name">New Delhi</h1>
+            <small>
+                <span class="time">10:00</span>
+                -
+                <span class="date">Monday Sep 16</span>
+            </small>
+        </div>
+        <!--weather icon & weather type-->
+        <div class="weather">
+            <img src="https://cdn-icons-png.flaticon.com/128/3222/3222675.png" class="icon" alt="icon" width="50" height="50"/>
+            <span class="condition">Sunny</span>
+        </div>
+      </div>
+      <!--adding wind speed, humidity, weather condition-->
+      <div class="info">
+        <div class="C">
+            <span>Cloudy :</span>
+            <span class="cloudy">40% </span>&nbsp &nbsp &nbsp
+        </div>
+        <div class="W">
+            <span>Wind Speed :</span>
+            <span class="wind">10 km/hr</span>&nbsp &nbsp &nbsp
+        </div>
+        <div class="H">
+            <span>Humidity :</span>
+            <span class="humid">40%</span>
+        </div>
+    </div>
+    <table class="table table-borderless table-sm" id="table">
+        <!--creating forecast table from bootstrap-->
+        <tbody>
+          <tr>
+            <th class="d1">Today</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu1"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png" alt="Icon" width="15" height="15"/><span class="w1"></span></td>
+            <td><img src="#"  class="i1" alt="Icon" width="30" height="30"/> </td>
+            <td class="t1">30&#176/30&#176</td>            
+          </tr>
+          <tr>
+            <th class="d2">Tuesday</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu2"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png"  alt="Icon" width="15" height="15"/><span class="w2"></span></td>
+            <td><img src="#"  class="i2" alt="Icon" width="30" height="30"/> </td>
+            <td class="t2">30&#176/30&#176</td>
+          </tr>
+          <tr>
+            <th class="d3">Wednesday</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu3"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png"  alt="Icon" width="15" height="15"/><span class="w3"></span></td>
+            <td><img src="#"  class="i3" alt="Icon" width="30" height="30"/> </td> 
+            <td class="t3">30&#176/30&#176</td>
+          </tr>
+          <tr>
+            <th class="d4">Thursday</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu4"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png"  alt="Icon" width="15" height="15"/><span class="w4"></span></td>
+            <td><img src="#"  class="i4" alt="Icon" width="30" height="30"/> </td>   
+            <td class="t4">33&#176/33&#176</td>
+          </tr>
+          <tr>
+            <th class="d5">Friday</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu5"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png"  alt="icon1" width="15" height="15"/><span class="w5"></span></td>
+            <td><img src="#" class="i5"  alt="Icon" width="30" height="30"/> </td> 
+            <td class="t5">30&#176/30&#176</td>            
+          </tr>
+          <tr>
+            <th class="d6">Saturday</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu6"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png"  alt="Icon" width="15" height="15"/><span class="w6"></span></td>
+            <td><img src="#"  class="i6" alt="Icon" width="30" height="30"/> </td>
+            <td class="t6">30&#176/30&#176</td>
+          </tr>
+          <tr>
+            <th class="d7">Sunday</th>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/932/932532.png"  alt="Icon" width="13" height="13"/><span class="hu7"></span></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/128/2676/2676047.png"  alt="Icon" width="15" height="15"/><span class="w7"></span></td>
+            <td><img src="#"  class="i7" alt="Icon" width="30" height="30"/> </td>
+            <td class="t7">30&#176/30&#176</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--seaching panel for entering city name-->
+    <div class="search">
+        <form id="locationIn">
+            <input
+            type="text"
+            class="find"
+            placeholder="Search City..."/>
+            <!--submit-->
+            <button type="submit" class="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </form>
+        <!--providing list of some cities-->
+        <ul class="city">
+            <li class="option">Washington DC</li>
+            <li class="option">London</li>
+            <li class="option">Paris</li>
+            <li class="option">Moscow</li>
+            <li class="option">Seol</li>
+            <li class="option">Tokyo</li>
+            <li class="option">Beijing</li>
+            <li class="option">Cairo</li>
+            <li class="option">Riyadh</li>
+            <li class="option">Canberra</li>
+            <li class="option">Natales</li>
+            <li class="option">Jakarta</li>
+            <li class="option">Berlin</li>
+            <li class="option">Brasilia</li>
+        </ul>
+    </div>     
+    <footer>
+      <h6><i>**Designed & Developed by Siddharth Dhakar</i></h6>
+    </footer>
+  </div>
+  <script src="maj.js"></script> //linking js file
+</body>
+</html>
